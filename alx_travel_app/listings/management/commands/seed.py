@@ -2,7 +2,7 @@
 """
 """
 from django.core.management.base import BaseCommand
-from listings.models import Listing
+from ......models import Listing
 import random
 
 class Command(BaseCommand):
