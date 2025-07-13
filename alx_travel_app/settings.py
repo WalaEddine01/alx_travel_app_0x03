@@ -75,6 +75,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'alx_travel_app.wsgi.application'
 
+CELERY_BROKER_URL = 'amqp://localhost'
+
+# Email settings (example using console for testing)
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.example.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'your@example.com'
+EMAIL_HOST_PASSWORD = 'yourpassword'
+DEFAULT_FROM_EMAIL = 'no-reply@alxtravel.com'
+
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
